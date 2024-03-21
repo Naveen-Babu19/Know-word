@@ -1,0 +1,206 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 49vw;
+    width: 99.9vw;
+    overflow-x: hidden;
+}
+.heading-font{
+    font-family: 'Barlow', sans-serif;
+}
+.normal-font{
+    font-family: 'Montserrat', sans-serif;
+}
+#whole-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 51vw;
+    width: 99.9vw;
+}
+#timer{
+    height: 10%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.timerHead{
+    font-size: 1.5vw;
+}
+.none{
+    display: none;
+}
+#timer-container{
+    height: 53%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.timerButton{
+    width: 17%;
+    height: 66%;
+    font-size: 1.1vw;
+    border-radius: 40px;
+    background-color: white;
+}
+#timingDisplayer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 67%;
+    font-size: 1.85vw;
+}
+.playingSide{
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+.playingOptions{
+    width: 43%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.whichPlayingImage{
+    height: 100%;
+    width: 15%;
+    border-image: linear-gradient(to bottom right,#FF5D1F,#FF8F64,#573CE4) 30 ;
+    border-width: 4px;
+    border-style: solid;
+    
+}
+.bgImage{
+    height: 100%;
+    width: 100%;
+    background-image: url("images/space.jpg");
+    background-size: 230%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.level{
+    width: 10%;
+    background: none;
+    border: none;
+    font-size: 1.5vw;
+}
+#levels{
+    width: 30%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.levelDisp{
+    font-size: 2vw;
+}
+.levelDispHead{
+    font-size: 0.9vw;
+    letter-spacing: 1.2px;
+}
+.startButton{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+#inText{
+    height: 20%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#startText{
+    font-size: 2vw;
+}
+#press{
+    font-size: 1vw;
+    color: #1D1E2F;
+    display: flex;
+    justify-content: center;
+}
+#enter{
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 21%;
+    height: 89%;
+    font-size: 0.78vw;
+    font-weight: 600;
+    margin-left: 3%;
+    border-radius: 5px;
+}
+.Play-Word{
+    color: #FF8F64;
+    font-size: 3vw;
+    width: 70%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+button:hover{
+    background-color:#F5F4FD ;
+}
+@media screen and (min-device-width: 320px) and (max-device-width:768px) {
+    #whole-container{
+        height: 216vw;
+    }
+    .playingSide{
+        flex-direction: column;
+        height: 153vw;
+        align-items: center;
+    }
+    .media-none{
+        display: none !important;
+    }
+    #timer{
+        margin-top: 32%;
+        width: 25vw;
+    }
+    .timerHead{
+        font-size: 5vw;
+        width: 126%;
+    }
+    #timer-container{
+        width: 160%;
+    }
+    .timerButton{
+        height: 90%;
+        width: 26%;
+        font-size: 5vw;
+    }
+    .timings{
+        font-size: 5vw;
+    }
+    .whichPlayingImage{
+        width: 65%;
+        font-size: 6vw;
+    }
+    .Play-Word{
+        font-size: 12vw;
+    }
+    .startButton{
+        width: 100%;
+    }
+    #inText{
+        width: 100%;
+    }
+    #startText{
+        font-size: 9vw;
+    }
+}

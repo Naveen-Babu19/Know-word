@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="wordCreator.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Knoword</title>
+</head>
+<body>
+    <div class="wholeContainer">
+        <h1 class="heading-font head">Word creator</h1>
+        <p class="group">
+            <label class="normal-font">Answer</label>
+            <input type="text" placeholder="answer" id="answer" required>
+        </p>
+        <p class="group">
+            <label class="normal-font">Sentence</label>
+            <input type="text" placeholder="sentence" id="sentence" required>
+        </p>
+        <select id="grammar" class="markdown">
+            <option value="noun">noun</option>
+            <option value="verb">verb</option>
+            <option value="adjective">adjective</option>
+            <option value="adverb">adverb</option>
+        </select>
+        <div class="butContainer">
+            <button onclick="cancel()" class="inbut cancel">Cancel</button>
+            <button onclick="createWord()" class="inbut">create</button>
+        </div>
+    </div>
+    <script src="wordCreator.js"></script>
+</body>

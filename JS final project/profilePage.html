@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="pack.css" rel="stylesheet" type="text/css">
+    <link href="profilePage.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Knoword</title>
+</head>
+<body>
+    <header>
+        <div id="container1">
+            <div class="logo-container">
+                <a id="logolinkimg" href="index.html"><div id="logo"></div></a>
+                <a id="logolinknam" href="index.html"><div id="nameLogo"></div></a>
+            </div>
+            <ul class="divisions">
+                <a class="list-fonts list-none" id="play" href="game.html"><li class="normal-font">Play</li></a>
+                <a class="list-fonts list-none" id="pack" href="pack.html" onclick="buildPacks()"><li class="normal-font">Packs</li></a>
+                <a class="list-fonts list-none normal-font creatingPack">Create</a>
+                <button class="hamMenu none" onclick="disp()"><li><i class="fa-solid fa-bars"></i></li></button>
+            </ul>
+        </div>
+        <ul class="overflow none" id="overflow">
+            <a class="overflow-list-fonts" href="game.html"><li class="normal-font">Play</li></a>
+            <a class="overflow-list-fonts" href="pack.html" onclick="buildPacks()"><li class="normal-font">Packs</li></a>
+            <a class="overflow-create normal-font creatingPack" href="createPack.html" onclick="createPackShow(id)">Create</a>
+        </ul>
+        <div id="container2">
+            <a class="icon heading-font none" href="profilePage.html" id="icon">C</a>
+            <button id="log-inButton" onclick="changeWindow()">Log in</button>
+        </div>
+    </header>
+    <section class="myProfile">
+        <div class="profile-container">
+            <h1 class="head-profile heading-font">My Profile</h1>
+            <div class="details-container">
+                <p class="username-show normal-font">User name : <span id="username" class="heading-font"></span></p>
+                <button id="logout" onclick="logOut()">Log out</button>
+            </div>
+        </div>
+    </section>
+    <section class="myPacksSection">
+        <div id="pack-head" class="pack-head-profile">
+            <p class="heading1 heading-font">My Packs</p>
+            <a class="normal-font creatingPack-profile" href="createPack.html">Create</a>
+        </div>
+        <div class="profile-pack-container" id="profile-pack-container"></div>
+        <div class="pack-words-container none" id="pack-words-container">
+            <div id="pack-name-container">
+                <i class="fa-solid fa-arrow-left moveBack" onclick="backToPacksPage()"></i>
+                <p class="heading1 heading-font" id="pack-name"></p>
+                <a class="normal-font creatingPack-profile" onclick="changeLocation()">Add Word</a>
+            </div>
+            <div id="words-container"></div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/baefc7edb6.js" crossorigin="anonymous"></script>
+    <script src="profilePack.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="game.css" rel="stylesheet" type="text/css">
+    <link href="play.css" rel="stylesheet" type="text/css">
+    <link href="pack.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&family=Montserrat&family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <title>Play game</title>
+</head>
+<body>
+    <section id="whole-container" class="">
+        <header>
+            <div id="container1">
+                <div class="logo-container">
+                    <a id="logolinkimg" href="index.html"><div id="logo"></div></a>
+                    <a id="logolinknam" href="index.html"><div id="nameLogo"></div></a>
+                </div>
+            </div>
+            <div id="container2">
+                <a class="icon heading-font none" href="profilePage.html" id="icon">C</a>
+                <button id="log-inButton" onclick="changeWindow()">Log in</button>
+            </div>
+        </header>
+        </div>
+        <div id="timer">
+            <h1 class="normal-font timerHead">Time limit</h1>
+            <div id="timer-container">
+                <button id="minus" class="timerButton">-</button>
+                <div id="timingDisplayer" class="heading-font">
+                    <p class="timings" id="min1" data-seconds="60">01:00</p><p class="timings none" id="min130sec" data-seconds="90">01:30</p><p class="timings none" id="min2" data-seconds="120">02:00</p><p class="timings none" id="min3" data-seconds="180">03:00</p><p class="timings none" id="min5" data-seconds="300">05:00</p>
+                </div>
+                <button id="plus" class="timerButton">+</button>
+            </div>
+        </div>
+        <section class="playingSide">
+            <div class="playingOptions media-none">
+                <button class="level" id="beforeLevel"><i class="fa-solid fa-angle-left"></i></button>
+                <div id="levels"> 
+                    <h2 class="normal-font levelDispHead" >Difficulty</h2>
+                    <p class="levelDisp heading-font" id="easy">Easy</p>
+                    <p class="levelDisp heading-font none" id="medium">Medium</p>
+                    <p class="levelDisp heading-font none" id="hard">Hard</p>
+                </div>
+               <button class="level" id="nextLevel"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="whichPlayingImage">
+                <div class="bgImage" id="bgImage">
+                    <p class="Play-Word heading-font" id="Play-Word">Quick Play</p>
+                </div>
+            </div>
+            <!-- //timer() -->
+            <button class="playingOptions startButton" id="startGame" onclick="timer()"> 
+                <div id="inText">
+                    <p id="startText" class="heading-font">Start Game</p>
+                    <span id="press" class="media-none">Press <span id="enter">enter</span></span>
+                </div>
+            </button>
+        </section>
+        <div class="language media-none"></div>
+    </section>
+
+    <section id="wholeContainer2" class="none">
+        <section id="questions">
+            <p id="askQuestions"><span id="grammar" class="heading-font"></span><span id="questionsDisplay" class="normal-font"></span></p>
+        </section>
+        <ul class="set">
+            <li id="quitList"><button id="quitButton" onclick="quit()">Quit Game<i class="fa-solid fa-xmark imageBackground media-none"></i></button></li>
+        </ul>
+        <div class="decision" id="decision">
+                <i class="fa-solid fa-check check none" id="check"></i>
+                <i class="fa-solid fa-xmark xmark none" id="xmark"></i>
+                <span id="lastWord" class="heading-font"></span>
+        </div>
+        <div id="progressBar"></div>
+        <section id="answerCheck" data-placeholder="Starts with letter S">
+            <input id="answer" placeholder="Starts with I" autofocus="on" autocomplete="off" spellcheck="false">
+        </section>
+        <button id="skip">
+            <span class="skipLet heading-font">SKIP</span><span class="escape media-none">esc</span>
+        </button>
+        <div id="gradient-placer" class="gradient-placer">
+            <span id="timerPrinter" class="timerPrinter heading-font"></span>
+        </div>
+    </section>
+
+    
+    <script src="https://kit.fontawesome.com/baefc7edb6.js" crossorigin="anonymous"></script>
+    <script src="onlyGamePack.js"></script>
+</body>
+</html>

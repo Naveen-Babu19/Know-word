@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="loginPage.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Knoword</title>
+</head>
+<body>
+    <div id="login-container" class="container">
+        <h1 class="heading-font head">Log in</h1>
+        <p class="group">
+            <label class="normal-font">User name <i class="fa-solid fa-star-of-life compul"></i></label>
+            <input type="text" placeholder="username login" id="loginName" required>
+            <span class="error normal-font none" id="loginUser">Username is not found</span>
+        </p>
+        <p class="group">
+            <label class="normal-font">Password</label>
+            <input type="password" placeholder="password" id="loginPass">
+            <span class="error normal-font none" id="loginPassCheck">Incorrect password</span>
+        </p>
+        <div class="butContainer">
+            <button onclick="cancel()" class="inbutt cancel">Cancel</button>
+            <button onclick="logIn()" class="inbutt">log in</button>
+        </div>
+        <div class="login-button-container ">
+            <p class="login-text normal-font">Don't have an account?</p>
+            <button class="next" onclick="changetoLogin()">Sign up</button>
+        </div>
+    </div>
+    <div id="signup-container" class="container none">
+        <h1 class="heading-font head">Sign up</h1>
+        <p class="group">
+            <label class="normal-font">User name<i class="fa-solid fa-star-of-life compul"> <span class="require normal-font">(must be unique)</span></i></label>
+            <input type="text" placeholder="username" id="singinName" required>
+            <span class="error normal-font none" id="signupUser">Username has already taken</span>
+        </p>
+
+        <p class="group">
+            <label class="normal-font">Password<i class="fa-solid fa-star-of-life compul"></i></label>
+            <input type="password" placeholder="password" id="signinPass">
+            <span class="error normal-font none" id="signupPassCheck">Enter a valid password</span>
+        </p>
+        <div class="butContainer">
+            <button onclick="cancel()" class="inbutt cancel">Cancel</button>
+            <button onclick="signup()" class="inbutt">Sign up</button>
+        </div>
+        <div class="login-button-container">
+            <p class="login-text normal-font">Already have an account?</p>
+            <button class="next" onclick="changetoSignup()">log in</button>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/baefc7edb6.js" crossorigin="anonymous"></script>
+    <script src="loginPage.js"></script>
+</body>
+</html>

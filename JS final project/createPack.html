@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="game.css" rel="stylesheet" type="text/css">
+    <link href="play.css" rel="stylesheet" type="text/css">
+    <link href="pack.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Knoword</title>
+</head>
+<body>
+    <section id="create-pack-container" class="">
+        <div class="pack-creation">
+            <h1 id="headerForPack" class="normal-font">Create Pack</h1>
+            <p class="name-getter">
+                <label class="heading-font">Pack name <i class="fa-solid fa-star-of-life compul"></i></label>
+                <input type="text" placeholder="Enter pack name" id="packName" required>
+            </p>
+            <select class="categories-container" id="categorytoBeSelected" required>
+                <option value="history">History</option>
+                <option value="business">Buisness</option>
+                <option value="geography">Geography</option>
+                <option value="social">Social Science</option>
+            </select>
+            <div class="createContainer-Buttons">
+                <button class="cancelButton" onclick="cancel()">Cancel</button>
+                <button onclick="createPack()" class="createButton">Create</button>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/baefc7edb6.js" crossorigin="anonymous"></script>
+    <script src="createPack.js"></script>
+</body>
+</html>

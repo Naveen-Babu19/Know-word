@@ -1,0 +1,271 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 49vw;
+    width: 99.9vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading-font{
+    font-family: 'Barlow', sans-serif;
+}
+.normal-font{
+    font-family: 'Montserrat', sans-serif;
+}
+#Options{
+    width: 10vw;
+    height: 51vw;
+    padding-top: 5%;
+}
+.profile-pack-container{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.creatingPack-profile{
+    color: white;
+    background-color: #4F36E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3vw;
+    width: 12%;
+    height: 66%;
+    border-radius: 11px;
+    border: none;
+}
+.hamMenu{
+    color: black;
+}
+.pack-head-profile{
+    height: 6vw;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myPacksSection{
+    height: 51vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading1{
+    font-size: 4vw;
+}
+.profile-pack-container{
+    width: 80%;
+    height: 70%;
+    margin-top: 3%;
+}
+.none{
+    display: none;
+}
+.pack-words-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#pack-name-container{
+    height: 6vw;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#words-container{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.none{
+    display: none;
+}
+.myProfile{
+    height: 13vw;
+    width: 95vw;
+    border-bottom: 1px solid black;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head-profile{
+    font-size: 5vw;
+}
+.profile-container{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.details-container{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.username-show{
+    font-size: 2vw;
+}
+#logout{
+    height: 30%;
+    width: 50%;
+    background-color: rgb(255, 108, 108);
+    border: none;
+    border-radius: 11px;
+    font-size: 1vw;
+    color: white;
+}
+.pack-word{
+    margin-left: 2%;
+    height: 60%;
+    width:15%;
+    border-radius: 10px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.pack-word-answer{
+    font-size: 2.3vw;
+    font-family: 'Barlow', sans-serif;
+}
+.pack-word-grammar{
+    font-size: 1.5vw;
+    font-family: 'Barlow', sans-serif;
+}
+.pack-word-sentence-container{
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+}
+.moveBack{
+    font-size: 2em;
+}
+@media screen and (min-device-width: 320px) and (max-device-width:768px){
+    body{
+        height: 216vw;
+    }
+    header{
+        height: 13vw;
+    }
+    .list-none{
+        display: none !important; 
+    }
+    .hamMenu{
+        font-size: 5.5vw;
+        background-color: transparent;
+        border: none;
+        color: white;
+        display: block !important;
+    }
+    .logo-container{
+        width: 146vw;
+        height: 9vw;
+    }
+    #container1{
+        display: flex;
+        align-items: center;
+        width: 40vw;
+    }
+    .icon{
+        width: 10vw;
+        height: 10vw;
+        font-size: 5vw;
+    }
+    .intro-head{
+        width: 66vw;
+        height: 76vw;
+    }
+    .media-intro-head{
+        font-size: 5vw;
+    }
+    .myProfile{
+        margin-top: 18%;
+        height: 29vw;
+        width: 97%;
+    }
+    .profile-container{
+        height: 50vw;
+        width: 100%;
+        align-items: center;
+    }
+    .hamMenu{
+        color: black;
+    }
+    .head-profile{
+        font-size: 10vw;
+    }
+    .details-container{
+        width: 50%;
+    }
+    .username-show{
+        font-size: 4vw;
+    }
+    #logout{
+        font-size: 4vw;
+    }
+    .pack-head-profile{
+        height: 16vw;
+        width: 90%;
+        padding-top: 2%;
+    }
+    .heading1{
+        font-size: 11vw;
+    }
+    .creatingPack-profile{
+        width: 30%;
+        height: 100%;
+        font-size: 4vw;    
+    }
+    .profile-pack-container{
+        height: 48vw;
+        width: 97%;    
+    }
+    #pack-name{
+        font-size: 2em;
+    }
+    #pack-name-container{
+        width: 90%;
+        margin: 2% 0% 5% 0%;
+        height: 20%;
+    }
+    #words-container{
+        width: 90%;
+    }
+    .pack-word{
+        height: 80%;
+        width: 41%;
+    }
+    .pack-word-answer{
+        font-size: 1.5em;
+    }
+    .pack-word-grammar{
+        font-size: 1em;
+    }
+    .pack-word-sentence-container{
+        font-size: 1em;
+    }
+    .overflow{
+        position: relative;
+        height: 40vw;
+        width: 50vw;
+        top: 190%;
+        left: -20%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        color: black;
+    }
+}

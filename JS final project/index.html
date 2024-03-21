@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Knoword</title>
+</head>
+<body>
+    <section id="main-whole-container" class="">
+        <header>
+            <div id="container1">
+                <div class="logo-container">
+                    <a class="logolinkimg"><div id="logo"></div></a>
+                    <a class="logolinknam"><div id="nameLogo"></div></a>
+                </div>
+                <ul class="divisions">
+                    <a class="list-fonts list-none" id="play" href="game.html"><li class="normal-font">Play</li></a>
+                    <a class="list-fonts list-none" id="pack" href="pack.html" onclick="buildPacks()"><li class="normal-font">Packs</li></a>
+                    <a class="list-fonts normal-font creatingPack list-none" href="createPack.html" onclick="createPackShow(id)">Create</a>
+                    <button class="hamMenu none" onclick="disp()"><li><i class="fa-solid fa-bars"></i></li></button>
+                </ul>
+            </div>
+            <ul class="overflow none" id="overflow">
+                <a class="overflow-list-fonts" href="game.html"><li class="normal-font">Play</li></a>
+                <a class="overflow-list-fonts" href="pack.html" onclick="buildPacks()"><li class="normal-font">Packs</li></a>
+                <a class="overflow-create normal-font creatingPack" href="createPack.html" onclick="createPackShow(id)">Create</a>
+            </ul>
+            <div id="container2">
+                <a class="icon heading-font none" href="profilePage.html" id="icon">C</a>
+                <button id="log-inButton" onclick="changeWindow()">Log in</button>
+            </div>
+        </header>
+        <section class="intro-part">
+            <div class="intro-head" >
+                <h3 class="heading-font media-intro-head">POWER UP YOUR VOCABULARY</h3>
+                <p class="normal-font intro-para">Knoword is the game-based learning platform that makes teaching easier and learning vocabulary almost too fun for words.</p>
+                <div id="intro-buttons">
+                    <a class="playButtton normal-font" href="game.html">Play now</a>
+                </div>
+            </div>
+            <div></div>
+        </section>
+        <section id="container3">
+            <div id="main-cont31">
+                <p class="head-blue normal-font">Word quizzes & course review</p>
+                <h3 class="head-cont31 normal-font">Packs and packs of fun</h3>
+                <div class="cont3-para">
+                    <p class="cont3-para1 " >Knoword packs are like sets of interactive flash cards. Whether you're teaching biology terms, names of historical figures, capital cities, or movie titles, there's a pack for that. And if there</p>
+                    <p class="cont3-para1 " >isn't one, it's just as easy to create custom packs for your students to play and expand their vocabulary.</p>
+                </div>
+                <a href="pack.html" id="borwseButton"  class="normal-font">Browse packs</a>
+            </div>
+        </section>
+        <footer>
+            <section class="footer-container">
+                <div id="logo-bottom" class="list-none">
+                    <div class="logo-container-footer">
+                        <a class="logolinkimg"><div id="logo"></div></a>
+                        <a class="logolinknam"><div id="nameLogo"></div></a>
+                    </div>
+                    <div class="Knoword-name normal-font"><i class="fa-regular fa-copyright"></i><span>Knoword</span><i class="fa-regular fa-moon"></i></div>
+                </div>
+                <ul class="container">
+                    <a class="footer-head heading-font"><li>Essential links</li></a>
+                    <a href="index.html" class="footer-list normal-font"><li>Home</li></a>
+                    <a href="game.html" class="footer-list normal-font"><li>Play game</li></a>
+                    <a href="pack.html" class="footer-list normal-font"><li>Browse packs</li></a>
+                    <a href="pack.html" class="footer-list normal-font"><li>Collections</li></a>
+                </ul>
+                <ul class="container">
+                    <a class="footer-head heading-font"><li>Connect with us</li></a>
+                    <a href="https://twitter.com/knoword" class="footer-list normal-font"><li>Twitter</li></a>
+                    <a href="https://www.instagram.com/playknoword/" class="footer-list normal-font"><li>Instagram</li></a>
+                    <a href="https://www.facebook.com/knoword" class="footer-list normal-font"><li>Facebook</li></a>
+                </ul>
+                <ul class="container list-none">
+                    <a class="footer-head heading-font"><li>Resources</li></a>
+                    <a href="https://knoword.com/support" class="footer-list normal-font"><li>Support</li></a>
+                    <a href="https://knoword.com/blog" class="footer-list normal-font"><li>Blog</li></a>
+                    <a href="https://knoword.com/guide" class="footer-list normal-font"><li>Reference Guide</li></a>
+                    <a href="https://knoword.com/faq" class="footer-list normal-font"><li>FAQ</li></a>
+                    <a href="https://knoword.com/privacy" class="footer-list normal-font"><li>Privacy Policy</li></a>
+                    <a href="https://knoword.com/terms" class="footer-list normal-font"><li>Terms and Conditions</li></a>
+                </ul>
+            </section>
+        </footer>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/baefc7edb6.js" crossorigin="anonymous"></script>
+</body>
+</html>

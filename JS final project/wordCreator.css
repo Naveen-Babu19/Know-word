@@ -1,0 +1,98 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 49vw;
+    width: 99.9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #85e7c8;
+}
+.heading-font{
+    font-family: 'Barlow', sans-serif;
+}
+.normal-font{
+    font-family: 'Montserrat', sans-serif;
+}
+.wholeContainer{
+    height: 30vw;
+    width: 30vw;
+    border: 3px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+}
+.group{
+    height: 15%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+label{
+    font-size: 1.3vw;
+}
+.head{
+    font-size: 2.5vw;
+}
+input{
+    padding-left: 2%;
+    height: 53%;
+    border-radius: 7px;
+    font-size: 1vw;
+}
+.markdown{
+    height: 10%;
+    width: 65%;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 1vw;
+}
+.butContainer{
+    height: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.inbut{
+    width: 30%;
+    background-color: #4F36E8;
+    color: white;
+    font-size: 1vw;
+    border: none;
+    border-radius: 11px;
+}
+.cancel{
+    background-color: rgb(255, 108, 108);
+}
+@media screen and (min-device-width: 320px) and (max-device-width:768px) {
+    .wholeContainer{
+        height: 44%;
+        width: 62%;
+    }
+    body{
+        height: 217vw;
+        width: 100%;
+    }
+    .head{
+        font-size: 2em;
+    }
+    label{
+        font-size: 1.2em;
+    }
+    input{
+        font-size: 0.7em;
+    }
+    .markdown{
+        font-size: 0.7em;
+    }
+    .inbut{
+        font-size: 0.7em;
+    }
+}
